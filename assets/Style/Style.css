@@ -1,0 +1,183 @@
+:root{
+    --cardo-50: #f9f6f9;
+--cardo-100: #f5eef3;
+--thistle-200: #ecdee9;
+--cardo-300: #d7b8cf;
+--cardo-400: #c89ebc;
+--cardo-500: #b480a4;
+--cardo-600: #9e648a;
+--cardo-700: #865072;
+--cardo-800: #6f455e;
+--cardo-900: #5f3c51;
+--cardo-950: #37202e;
+
+
+}
+/* Tus estilos existentes aquí */
+
+body.dark-theme {
+    --cardo-50: rgb(82, 43, 82);
+    --cardo-100: #492b41;
+    --thistle-200: #1f178f;
+    --cardo-300: #030203;
+    --cardo-400: rgb(238, 243, 245);
+    --cardo-500: #1f1b1d;
+    --cardo-600: rgb(8, 40, 53);
+    --cardo-700: #ebdde5;
+    --cardo-800: #e4d0dc;
+    --cardo-900: #5f3c51;
+    --cardo-950: #37202e;
+}
+
+/* Agrega más estilos según sea necesario */
+
+body{
+    background-color: var(--cardo-600);
+    position: relative;
+}
+.navbar{
+    padding: .5rem;
+    background-color: var(--cardo-300);
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+.conte{
+    gap: 1em;
+}
+.lu{
+display: none;
+}
+.logo2 {
+    display: none;
+}
+.logo1 > img {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+}
+.logo1 > h4 {
+    display: none;
+}
+.logo2 > img {
+    width: 3.4em;
+    height: 3em;
+    border-radius: 50%;
+    border: 2.5px solid var(--cardo-800);
+}
+.logo2 > h4 {
+    font-size: 15px;
+    color: var(--cardo-800);
+    font-weight: 500;
+}
+.nav-item > a {
+    font-size: 1.3rem;
+    color: var(--cardo-800);
+
+}
+.nav-item > a:hover{
+    color: var(--cardo-100);
+}
+.form{
+    background-color: var(--cardo-300);
+    max-width: 30rem;
+    position: absolute;
+    right: 0;
+    padding: 2em;
+    display: none;
+    transition: display 2000ms ease;
+}
+.exi{
+    color: var(--cardo-900);
+    cursor: pointer;
+}
+.btn-ss{
+    background-color: #6f455e;
+    width: 100%;
+}
+.button {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    margin-right: 3em;
+    border: none;
+    padding: 1em;
+    background-color: var(--cardo-500);
+    border-radius: 0px 0px 14px 14px;
+    color: #ecdee9;
+}
+.butto{
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: .5em 0em 0em .5em;
+    background-color: var(--cardo-300);
+}
+select{
+    border: none;
+    border-radius: 0em .5em .5em 0px;
+    background-color: var(--cardo-300);
+}
+
+
+
+
+
+/* Agrega el siguiente código después de tus estilos existentes */
+
+.container {
+    background-color: var(--cardo-400);
+    padding: 5em;
+}
+.col-md-6 > h1{
+    font-size: 24px;
+}
+
+.display-4 {
+    color: rgb(33, 165, 218);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.img-fluid {
+    width: 100%;
+    border-radius: 1rem;
+    border: 10px solid black;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .lu{
+        display: block;
+    }
+    .logo2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left:5em;
+    }
+    .logo1 {
+        display: none;
+    }
+    .conte{
+        gap: 6em;
+        margin-right: 3em;
+    }
+}
