@@ -175,6 +175,98 @@ select{
 }
 
 
+
+.cont {
+    width: 100%;
+    max-width: 70em; 
+}
+
+
+
+
+.Footer_dad {
+left: 0;
+bottom: 0;
+width: 100%;
+background: var(--HeaderAndCarts--300);
+padding: 20px;
+box-sizing: border-box;
+margin-top: 5em;
+}
+
+.dad_footer {
+display: flex;
+gap: 3rem;
+font-size: 12px;
+
+}
+
+.Footer_hijo1 img {
+display: none;
+}
+
+.hijo2 {
+display: none;
+}
+.hijo2 > h2{
+font-size: 1.5rem;
+color: var(--tittles-50);
+}
+
+.hijo2 p {
+text-align: center;
+font-size: 17px;
+padding: 0em 3em 3em 3em;
+color: var(--texts-100);
+}
+
+.Footer_hijo3 {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-left: -3em;
+}
+.hijo3_h2{
+font-size: 1.5rem;
+color: var(--tittles-50);
+}
+
+.Footer_hijo3 ul {
+display: flex;
+list-style: none;
+gap: 3rem;
+font-size: 1em;
+padding: 0;
+margin: 0;
+height: 8em;
+align-items: center;
+}
+
+.Footer_hijo3 > ul > li > a > i {
+font-size: 2.5em;
+color: var(--texts-100);
+}
+
+.Copyright {
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 20px;
+color: var(--tittles-50);
+}
+.Copyright > h4 {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 768px) {
     .luntel{
         display: none;
@@ -201,4 +293,81 @@ select{
         gap: 6em;
         margin-right: 3em;
     }
+    
+
+
+.Footer_dad {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: var(--HeaderAndCarts--300);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 5em;
+}
+.dad_footer {
+    display: flex;
+    gap: 3rem;
+    font-size: 12px;
+
+}
+
+.Footer_hijo1 img {
+    display: block;
+    width: 10em;
+    border-radius: 1rem;
+    border: 2px solid var(--Fondo-600);
+    max-width: 100%;
+    height: auto;
+}
+
+.hijo2 {
+    display: block;
+    max-width: 50em;
+    text-align: center;
+}
+.hijo2 > h2{
+    font-size: 1.5rem;
+    color: var(--tittles-50);
+}
+
+.hijo2 p {
+    text-align: center;
+    font-size: 17px;
+    padding: 0em 3em 3em 3em;
+    color: var(--texts-100);
+}
+
+.Footer_hijo3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hijo3_h2{
+    font-size: 1.5rem;
+    color: var(--tittles-50);
+}
+
+.Footer_hijo3 ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    height: 8em;
+    align-items: center;
+}
+
+.Footer_hijo3 > ul > li > a > i {
+    font-size: 2.5em;
+    color: var(--texts-100);
+}
+
+.Copyright {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    color: var(--tittles-50);
+}
 }
