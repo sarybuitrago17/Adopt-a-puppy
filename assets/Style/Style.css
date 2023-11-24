@@ -1,43 +1,40 @@
 :root{
-    --cardo-50: #f9f6f9;
---cardo-100: #f5eef3;
+    --tittles-50: #f9f6f9;
+--texts-100: #da0da0;
 --thistle-200: #ecdee9;
---cardo-300: #d7b8cf;
---cardo-400: #c89ebc;
---cardo-500: #b480a4;
---cardo-600: #9e648a;
---cardo-700: #865072;
---cardo-800: #6f455e;
---cardo-900: #5f3c51;
---cardo-950: #37202e;
-
-
+--HeaderAndCarts--300: #d7b8cf;
+--button-500: #b480a4;
+--Fondo-600: #9e648a;
 }
-/* Tus estilos existentes aquí */
 
 body.dark-theme {
-    --cardo-50: rgb(82, 43, 82);
-    --cardo-100: #492b41;
-    --thistle-200: #1f178f;
-    --cardo-300: #030203;
-    --cardo-400: rgb(238, 243, 245);
-    --cardo-500: #1f1b1d;
-    --cardo-600: rgb(8, 40, 53);
-    --cardo-700: #ebdde5;
-    --cardo-800: #e4d0dc;
-    --cardo-900: #5f3c51;
-    --cardo-950: #37202e;
+    --tittles-50: #0808f78c;
+    --texts-100: #0f020c;
+    --thistle-200: #ecdee9;
+    --HeaderAndCarts--300: #0caeee;
+    --button-500: #80a8b4;
+    --Fondo-600: #64959e;
 }
 
-/* Agrega más estilos según sea necesario */
 
 body{
-    background-color: var(--cardo-600);
+    background-color: var(--Fondo-600);
     position: relative;
+}
+.welcome-screen{
+    margin-top: 8em;
+}
+.form-control{
+    width: 100%;
+    max-width: 20em;
+    color: var(--texts-100);
+}
+.form-label{
+    color: var(--tittles-50);
 }
 .navbar{
     padding: .5rem;
-    background-color: var(--cardo-300);
+    background-color: var(--HeaderAndCarts--300);
 }
 .navbar-collapse{
     align-items: center;
@@ -48,6 +45,12 @@ body{
 }
 .lu{
 display: none;
+}
+.luntel{
+    font-size: 1.5em;
+    color: var(--Fondo-600);
+    list-style: none;
+    cursor: pointer;
 }
 .logo2 {
     display: none;
@@ -64,16 +67,16 @@ display: none;
     width: 3.4em;
     height: 3em;
     border-radius: 50%;
-    border: 2.5px solid var(--cardo-800);
+    border: 2.5px solid var(--Fondo-600);
 }
 .logo2 > h4 {
     font-size: 15px;
-    color: var(--cardo-800);
+    color: var(--Fondo-600);
     font-weight: 500;
 }
 .nav-item > a {
     font-size: 1.3rem;
-    color: var(--cardo-800);
+    color: var(--Fondo-600);
 
 }
 .nav-item > a:hover{
@@ -89,7 +92,7 @@ display: none;
     transition: display 2000ms ease;
 }
 .exi{
-    color: var(--cardo-900);
+    color: var(--Fondo-600);
     cursor: pointer;
 }
 .btn-ss{
@@ -104,7 +107,7 @@ display: none;
     margin-right: 3em;
     border: none;
     padding: 1em;
-    background-color: var(--cardo-500);
+    background-color: var(--button-500);
     border-radius: 0px 0px 14px 14px;
     color: #ecdee9;
 }
@@ -113,36 +116,42 @@ display: none;
     font-weight: 600;
     border: none;
     border-radius: .5em 0em 0em .5em;
-    background-color: var(--cardo-300);
+    background-color: var(--HeaderAndCarts--300);
+    color: var(--Fondo-600);
 }
 select{
     border: none;
     border-radius: 0em .5em .5em 0px;
-    background-color: var(--cardo-300);
+    width: 4em;
+    background-color: var(--HeaderAndCarts--300);
+    color: var(--Fondo-600);
+    cursor: pointer;
 }
-
-
-
-
-
-/* Agrega el siguiente código después de tus estilos existentes */
-
+.form{
+    border-left: 3px solid var(--Fondo-600);
+}
 .container {
-    background-color: var(--cardo-400);
+    background-color: var(--HeaderAndCarts--300);
     padding: 5em;
 }
 .col-md-6 > h1{
     font-size: 24px;
+    color: var(--tittles-50);
+}
+.col-md-6 > h1 > span{
+    font-size: 24px;
+    color: var(--texts-100);
 }
 
 .display-4 {
-    color: rgb(33, 165, 218);
+    color: var(--tittles-50);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
 
 .mt-3 {
     margin-top: 1rem;
+    color: var(--texts-100);
 }
 
 .img-fluid {
@@ -155,13 +164,25 @@ select{
     text-align: center !important;
 }
 
-
-
-
-
+#nosotros{
+    color: var(--texts-100);
+}
+.title{
+    color: var(--tittles-50);
+}
+.text{
+    color: var(--texts-100);
+}
 
 
 @media (min-width: 768px) {
+    .luntel{
+        display: none;
+    }
+    .luntel > i {
+        cursor: pointer;
+        color: var(--Fondo-600);
+    }
     .lu{
         display: block;
     }

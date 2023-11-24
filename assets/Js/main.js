@@ -1,8 +1,21 @@
 
 const Registros = []
+
+
   console.log(Registros)
-
-
+  document.getElementById("start-button").addEventListener("click", function() {
+    // Obtener el valor del input de nombre
+    const name = document.getElementById("nameInput").value;
+    const namen = document.getElementById("namen")
+    namen.textContent = name
+    // Validar el nombre
+    if (name.length <= 3 || /\d/.test(name)) {
+        alert("Error 404: Ingresa un nombre válido (mínimo 3 letras y sin números).");
+    } else {
+        document.getElementById("welcome-screen").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+    }
+});
   function Registro() {
     const carta1 = {
       WhatsApp: "",
@@ -10,6 +23,8 @@ const Registros = []
          Nombre: "",
          Edad: "",
           Raza: "",
+          Sexo: "",
+          Esterilizacion: "",
          Descripcion: "",
          Vacunas: {
            Nombre: "",
@@ -26,6 +41,10 @@ const Registros = []
     carta1.Edad = edad
     const raza = document.getElementById("Raza").value
     carta1.Raza = raza
+    const sexo = document.getElementById("Sexo").value
+    carta1.Sexo = sexo
+    const Esterilizacion = document.getElementById("Esterilizacion").value
+    carta1.Esterilizacion = Esterilizacion
     const des = document.getElementById("des").value
     carta1.Descripcion = des
     const vacuna = document.getElementById("nombreVacuna").value
@@ -59,10 +78,10 @@ const Registros = []
     
         filteredRegistros.forEach((perro) => {
             const est = `
-            <div class="container mt-4">
+            <div class="con container  mt-4">
             <div class="row">
                 <div class="col-md-6">
-                    <h1 class="display-4">¡Hola, soy ${perro.Nombre}!</h1>
+                    <h2 class="display-4 title">¡Hola, soy ${perro.Nombre}!</h2>
                     <div class="row">
                         <div class="col-md-6">
                             <h1>Edad: <span>${perro.Edad}</span></h1>
@@ -73,10 +92,10 @@ const Registros = []
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <h1>Sexo: <span>Hembra</span></h1>
+                            <h1>Sexo: <span>${perro.Sexo}</span></h1>
                         </div>
                         <div class="col-md-6">
-                            <h1>Esterilizada: <span>No</span></h1>
+                            <h1>Esterilizada: <span>${perro.Esterilizacion}</span></h1>
                         </div>
                     </div>
                     <p class="mt-3">${perro.Descripcion}</p>
@@ -96,10 +115,10 @@ const Registros = []
 
   Registros.forEach(perro => {
     const est = `
-    <div class="container mt-4">
+    <div class="con container  mt-4">
     <div class="row">
         <div class="col-md-6">
-            <h1 class="display-4">¡Hola, soy ${perro.Nombre}!</h1>
+            <h2 class="display-4">¡Hola, soy ${perro.Nombre}!</h2>
             <div class="row">
                 <div class="col-md-6">
                     <h1>Edad: <span>${perro.Edad}</span></h1>
@@ -110,10 +129,10 @@ const Registros = []
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <h1>Sexo: <span>Hembra</span></h1>
+                    <h1>Sexo: <span>${perro.Sexo}</span></h1>
                 </div>
                 <div class="col-md-6">
-                    <h1>Esterilizada: <span>No</span></h1>
+                    <h1>Esterilizada: <span>${perro.Esterilizacion}</span></h1>
                 </div>
             </div>
             <p class="mt-3">${perro.Descripcion}</p>
@@ -126,8 +145,9 @@ const Registros = []
 
     `;
 
+     NameDog.innerHTML  += est
 
-    NameDog.innerHTML  += est
+   
 
   })
   }
@@ -160,10 +180,10 @@ const Registros = []
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <h1>Sexo: <span>Hembra</span></h1>
+                        <h1>Sexo: <span>${perro.Sexo}</span></h1>
                     </div>
                     <div class="col-md-6">
-                        <h1>Esterilizada: <span>No</span></h1>
+                        <h1>Esterilizada: <span>${perro.Esterilizacion}</span></h1>
                     </div>
                 </div>
                 <p class="mt-3">${perro.Descripcion}</p>
@@ -194,7 +214,14 @@ function transitionNavbar() {
 }
 
 function handleTheme() {
-    const iconTheme = document.querySelector(".bi-moon");
+    const iconTheme = document.querySelector(".gran");
+
+    iconTheme.addEventListener("click", function () {
+        document.body.classList.toggle("dark-theme");
+    });
+}
+function handleThem() {
+    const iconTheme = document.querySelector(".gra");
 
     iconTheme.addEventListener("click", function () {
         document.body.classList.toggle("dark-theme");
@@ -203,4 +230,4 @@ function handleTheme() {
 
 transitionNavbar();
 handleTheme();
-
+handleThem()
