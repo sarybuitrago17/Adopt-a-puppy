@@ -92,10 +92,10 @@ const Registros = []
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <h1>Sexo: <span>Hembra</span></h1>
+                            <h1>Sexo: <span>${perro.Sexo}</span></h1>
                         </div>
                         <div class="col-md-6">
-                            <h1>Esterilizada: <span>No</span></h1>
+                            <h1>Esterilizad@: <span>${perro.Esterilizacion}</span></h1>
                         </div>
                     </div>
                     <p class="mt-3">${perro.Descripcion}</p>
@@ -129,10 +129,10 @@ const Registros = []
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <h1>Sexo: <span>Hembra</span></h1>
+                    <h1>Sexo: <span>${perro.Sexo}</span></h1>
                 </div>
                 <div class="col-md-6">
-                    <h1>Esterilizada: <span>No</span></h1>
+                    <h1>Esterilizad@: <span>${perro.Esterilizacion}</span></h1>
                 </div>
             </div>
             <p class="mt-3">${perro.Descripcion}</p>
@@ -180,10 +180,10 @@ const Registros = []
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <h1>Sexo: <span>Hembra</span></h1>
+                        <h1>Sexo: <span>${perro.Sexo}</span></h1>
                     </div>
                     <div class="col-md-6">
-                        <h1>Esterilizada: <span>No</span></h1>
+                        <h1>Esterilizad@: <span>${perro.Esterilizacion}</span></h1>
                     </div>
                 </div>
                 <p class="mt-3">${perro.Descripcion}</p>
