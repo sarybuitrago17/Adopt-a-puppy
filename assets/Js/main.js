@@ -152,7 +152,7 @@ const Registros = []
   })
   }
 
- document.getElementById("open").addEventListener("click", function() {
+  document.getElementById("open").addEventListener("click", function() {
     document.querySelector(".form").style.display = 'grid';
     console.log("object")
   })
